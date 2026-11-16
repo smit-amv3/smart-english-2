@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English 2 | انگلیسی ۲</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ background:#fff2f8;
+ color:#49283b;
+ font-family:Tahoma,Arial,sans-serif;
+}
+header{
+ background:linear-gradient(120deg,#df4389,#a34e9b);
+ color:white;
+ text-align:center;
+ padding:30px 15px;
+ border-radius:0 0 25px 25px;
+}
+header h1{font-size:28px;margin:5px}
+header p{line-height:1.9}
+.container{max-width:1050px;margin:auto;padding:15px}
+nav{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ gap:8px;
+ margin:20px 0;
+}
+button{
+ font-family:inherit;
+ cursor:pointer;
+ border:0;
+ border-radius:10px;
+ padding:11px 14px;
+ background:#f9d9e9;
+ color:#8e285f;
+ font-weight:bold;
+}
+button:hover{filter:brightness(.96)}
+button.active,.primary{
+ background:#d83e83;
+ color:white;
+}
+.page{display:none}
+.page.active{display:block}
+.panel,.card{
+ background:white;
+ border:1px solid #f3c5dc;
+ border-radius:16px;
+ padding:17px;
+ margin:12px 0;
+}
+h2{color:#c12e76}
+h3{color:#a34d9c}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+ gap:12px;
+}
+input,select{
+ padding:12px;
+ border:1px solid #e9b7d0;
+ border-radius:10px;
+ font:inherit;
+ max-width:100%;
+ background:white;
+ color:#49283b;
+}
+input{width:65%}
+.en{
+ direction:ltr;
+ text-align:left;
+ font-size:20px;
+ color:#c12e76;
+ font-weight:bold;
+}
+.meaning{margin:10px 0;line-height:2}
+.example{
+ background:#fff3f8;
+ border-radius:10px;
+ padding:10px;
+ margin-top:10px;
+ line-height:2;
+}
+.small{font-size:13px;color:#946b81;line-height:2}
+.sound{margin:5px 3px}
+.ltr{direction:ltr;text-align:left}
+.option{
+ display:block;
+ width:100%;
+ text-align:right;
+ margin:8px 0;
+ background:#fff1f7;
+ border:1px solid #f0c5d9;
+}
+.option.selected{background:#f8c5df;border:2px solid #d83e83}
+.option.correct{background:#d8f5df;border:2px solid #48a766}
+.option.wrong{background:#ffdce2;border:2px solid #d95368}
+#status{
+ background:#fff3d9;
+ padding:12px;
+ border-radius:10px;
+ line-height:2;
+}
+footer{text-align:center;padding:25px;color:#946b81;line-height:2}
+hr{border:0;border-top:1px solid #f3c5dc;margin:18px 0}
+.tag{
+ display:inline-block;
+ background:#ffe2ef;
+ color:#a83270;
+ border-radius:20px;
+ padding:5px 10px;
+ font-size:12px;
+ margin:4px;
+}
+@media(max-width:600px){
+ input{width:100%;margin-bottom:8px}
+ header h1{font-size:23px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌸 جزوه هوشمند انگلیسی ۲ | Smart English 2</h1>
+<p>پایه یازدهم فنی و حرفه‌ای | Grade 11 - Technical Education</p>
+<p>یادگیری واژگان، تلفظ، گرامر و آزمون | Vocabulary, Pronunciation, Grammar & Quiz</p>
+</header>
+
+<div class="container">
+
+<nav>
+<button class="active" data-page="home">خانه | Home</button>
+<button data-page="vocab">واژگان | Vocabulary</button>
+<button data-page="phrases">عبارت‌ها | Phrases</button>
+<button data-page="grammar">گرامر | Grammar</button>
+<button data-page="quiz">آزمون | Quiz</button>
+</nav>
+
+<!-- HOME -->
+
+<section id="home" class="page active">
+<div class="panel">
+<h2>به جزوه خوش آمدی | Welcome to Your Study Guide 🌷</h2>
+<p>اینجا می‌توانی انگلیسی را با معنی فارسی، مثال و تلفظ صوتی تمرین کنی.</p>
+<p>Here you can practice English with Persian meanings, examples and audio pronunciation.</p>
+
+<h3>وضعیت صدا | Audio Status</h3>
+<div id="status">در حال بررسی صداها | Checking available voices...</div>
+
+<hr>
+
+<div class="grid">
+<div class="card">
+<h3>درس اول | Lesson 1</h3>
+<div class="en">The Value of Knowledge</div>
+<p>ارزش دانش | The importance of knowledge</p>
+<span class="tag">Vocabulary</span>
+<span class="tag">Grammar</span>
+</div>
+
+<div class="card">
+<h3>درس دوم | Lesson 2</h3>
+<div class="en">Traveling the World</div>
+<p>سفر به دور دنیا | Traveling around the world</p>
+<span class="tag">Vocabulary</span>
+<span class="tag">Grammar</span>
+</div>
+
+<div class="card">
+<h3>تلفظ صوتی | Audio Pronunciation</h3>
+<p>شنیدن تلفظ کلمات انگلیسی و معنی فارسی</p>
+<p>Listen to English words and Persian meanings.</p>
+</div>
+
+<div class="card">
+<h3>آزمون | Quiz</h3>
+<p>تمرین چهارگزینه‌ای و مشاهده نمره</p>
+<p>Multiple-choice practice and score results.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- VOCABULARY -->
+
+<section id="vocab" class="page">
+<div class="panel">
+<h2>واژگان | Vocabulary</h2>
+
+<p>کلمه یا معنی موردنظر را جست‌وجو کن.</p>
+<p>Search for an English word or Persian meaning.</p>
+
+<input id="search" placeholder="جست‌وجوی کلمه | Search vocabulary...">
+
+<select id="lesson">
+<option value="all">همه درس‌ها | All Lessons</option>
+<option value="1">درس اول | Lesson 1</option>
+<option value="2">درس دوم | Lesson 2</option>
+</select>
+
+<p class="small">
+برای شنیدن تلفظ از دکمه‌های زیر استفاده کن.
+<br>
+Use the buttons below to listen to pronunciation.
+</p>
+
+<div id="words" class="grid"></div>
+</div>
+</section>
+
+<!-- PHRASES -->
+
+<section id="phrases" class="page">
+<div class="panel">
+<h2>عبارت‌های مهم | Important Phrases</h2>
+<p>عبارت‌های انگلیسی همراه با معنی فارسی و تلفظ صوتی.</p>
+<p>English phrases with Persian meanings and audio pronunciation.</p>
+<div id="phraseList" class="grid"></div>
+</div>
+</section>
+
+<!-- GRAMMAR -->
+
+<section id="grammar" class="page">
+<div class="panel">
+<h2>آموزش گرامر | Grammar Lessons</h2>
+<p>نکات مهم گرامری درس اول و دوم.</p>
+<p>Important grammar points from Lessons 1 and 2.</p>
+<div id="grammarList"></div>
+</div>
+</section>
+
+<!-- QUIZ -->
+
+<section id="quiz" class="page">
+<div class="panel">
+<h2>آزمون چهارگزینه‌ای | Multiple Choice Quiz</h2>
+<p>به سؤال‌ها پاسخ بده و در پایان نمره خودت را ببین.</p>
+<p>Answer the questions and check your final score.</p>
+
+<div id="quizArea"></div>
+
+<button class="primary" id="finish">
+ثبت پاسخ‌ها و مشاهده نمره | Submit Answers & View Score
+</button>
+
+<button id="restart">
+شروع مجدد آزمون | Restart Quiz
+</button>
+
+<h3 id="result"></h3>
+</div>
+</section>
+
+</div>
+
+<footer>
+جزوه تمرینی انگلیسی ۲ | English 2 Study Guide
+<br>
+یادگیری هر روز یک قدم جلوتر | One Step Forward Every Day 🌸
+</footer>
+
+<script>
+"use strict";
+
+// =========================
+// VOCABULARY | واژگان
+// =========================
+
+const words = [
+["scientist","دانشمند","Scientists study the world.","دانشمندان جهان را مطالعه می‌کنند.",1],
+["famous","مشهور","Edison was famous.","ادیسون مشهور بود.",1],
+["laboratory","آزمایشگاه","They work in a laboratory.","آن‌ها در آزمایشگاه کار می‌کنند.",1],
+["medicine","پزشکی؛ دارو","He studied medicine.","او پزشکی خواند.",1],
+["invent","اختراع کردن","Scientists invent new things.","دانشمندان چیزهای جدید اختراع می‌کنند.",1],
+["invention","اختراع","It was an important invention.","این یک اختراع مهم بود.",1],
+["experiment","آزمایش","We do experiments.","ما آزمایش انجام می‌دهیم.",1],
+["research","پژوهش؛ تحقیق","She is doing research.","او در حال تحقیق است.",1],
+["solve","حل کردن","We can solve this problem.","ما می‌توانیم این مشکل را حل کنیم.",1],
+["develop","توسعه دادن","Reading develops knowledge.","مطالعه دانش را گسترش می‌دهد.",1],
+["belief","باور؛ اعتقاد","I respect your belief.","من به باور تو احترام می‌گذارم.",1],
+["quit","ترک کردن","Never quit learning.","هرگز یادگیری را رها نکن.",1],
+["give up","تسلیم شدن","Do not give up.","تسلیم نشو.",1],
+["attend","شرکت کردن؛ حضور یافتن","He attends school.","او به مدرسه می‌رود.",1],
+["hearing","شنوایی","He lost his hearing.","او شنوایی‌اش را از دست داد.",1],
+["energetic","پرانرژی","She is energetic.","او پرانرژی است.",1],
+["weak","ضعیف","He feels weak.","او احساس ضعف می‌کند.",1],
+["rapidly","به‌سرعت","Children grow rapidly.","کودکان به‌سرعت رشد می‌کنند.",1],
+["knowledge","دانش","Knowledge is valuable.","دانش ارزشمند است.",1],
+["writer","نویسنده","She is a writer.","او یک نویسنده است.",1],
+["translator","مترجم","He is a translator.","او یک مترجم است.",1],
+["poem","شعر","I read a poem.","من یک شعر خواندم.",1],
+["destination","مقصد","What is your destination?","مقصد تو کجاست؟",2],
+["tourist","گردشگر","Tourists visit Iran.","گردشگران از ایران دیدن می‌کنند.",2],
+["tourism","گردشگری","Tourism is important.","گردشگری مهم است.",2],
+["attraction","جاذبه","This is a tourist attraction.","این یک جاذبه گردشگری است.",2],
+["ticket","بلیط","I bought a ticket.","من یک بلیط خریدم.",2],
+["passport","گذرنامه","I need my passport.","من به گذرنامه‌ام نیاز دارم.",2],
+["visa","ویزا؛ روادید","She needs a visa.","او به ویزا نیاز دارد.",2],
+["booklet","دفترچه؛ جزوه","Read the booklet.","دفترچه را بخوان.",2],
+["vacation","تعطیلات","We travel in summer vacation.","ما در تعطیلات تابستان سفر می‌کنیم.",2],
+["pilgrim","زائر","Pilgrims visit holy places.","زائران از مکان‌های مقدس دیدن می‌کنند.",2],
+["historical","تاریخی","This is a historical place.","این یک مکان تاریخی است.",2],
+["ancient","باستانی","It is an ancient city.","این یک شهر باستانی است.",2],
+["hospitable","مهمان‌نواز","People are hospitable.","مردم مهمان‌نواز هستند.",2],
+["culture","فرهنگ","We respect other cultures.","ما به فرهنگ‌های دیگر احترام می‌گذاریم.",2],
+["domestic","داخلی","Domestic flights are available.","پروازهای داخلی موجود هستند.",2],
+["international","بین‌المللی","It is an international airport.","این یک فرودگاه بین‌المللی است.",2],
+["entertainment","سرگرمی","Travel is entertainment.","سفر سرگرمی است.",2],
+["probably","احتمالاً","Probably he is right.","احتمالاً او درست می‌گوید.",2],
+["suggestion","پیشنهاد","That is a good suggestion.","این پیشنهاد خوبی است.",2],
+["choice","انتخاب","It is your choice.","این انتخاب توست.",2],
+["agent","نماینده؛ کارگزار","He is a travel agent.","او کارگزار سفر است.",2],
+["plan","برنامه؛ برنامه‌ریزی کردن","I plan my trip.","من برای سفرم برنامه‌ریزی می‌کنم.",2],
+["protect","محافظت کردن","We must protect nature.","ما باید از طبیعت محافظت کنیم.",2],
+["abroad","در خارج از کشور","They travel abroad.","آن‌ها به خارج از کشور سفر می‌کنند.",2],
+["carefully","با دقت","Drive carefully.","با دقت رانندگی کن.",2],
+["politely","مودبانه","Speak politely.","مودبانه صحبت کن.",2],
+["easily","به‌آسانی","I can do it easily.","من می‌توانم آن را به‌آسانی انجام دهم.",2],
+["quickly","به‌سرعت","The plane moves quickly.","هواپیما به‌سرعت حرکت می‌کند.",2],
+["well","خوب","She speaks English well.","او انگلیسی را خوب صحبت می‌کند.",2],
+["fast","سریع","The train is fast.","قطار سریع است.",2],
+["hard","سخت؛ با تلاش","He works hard.","او سخت تلاش می‌کند.",2]
+];
+
+// =========================
+// PHRASES | عبارت‌ها
+// =========================
+
+const phrases = [
+["No pain, no gain.","نابرده رنج، گنج میسر نمی‌شود."],
+["from the cradle to the grave","از گهواره تا گور"],
+["try hard","سخت تلاش کردن"],
+["do research","پژوهش انجام دادن"],
+["give up","تسلیم شدن"],
+["grow up","بزرگ شدن"],
+["be interested in","علاقه‌مند بودن به"],
+["at first","در ابتدا"],
+["believe me","باور کن"],
+["travel abroad","به خارج از کشور سفر کردن"],
+["be famous for","به چیزی مشهور بودن"],
+["a wide range of","طیف گسترده‌ای از"],
+["holy shrine","زیارتگاه مقدس"],
+["local people","مردم محلی"]
+];
+
+// =========================
+// GRAMMAR | گرامر
+// =========================
+
+const grammar = [
+[
+"گذشته استمراری | Past Progressive",
+"Subject + was / were + verb-ing",
+"برای کاری که در زمان مشخصی در گذشته در حال انجام بوده است.",
+"Used for an action that was happening at a specific time in the past.",
+"I was studying. = داشتم درس می‌خواندم.\nThey were playing. = آن‌ها داشتند بازی می‌کردند."
+],
+[
+"ضمیرهای انعکاسی | Self Pronouns",
+"myself, yourself, himself, herself, itself, ourselves, yourselves, themselves",
+"برای تأکید بر خود شخص یا وقتی فاعل و مفعول یک نفر هستند.",
+"Used when the subject and object refer to the same person.",
+"I did it myself. = خودم آن را انجام دادم.\nShe cooked it herself. = او خودش آن را پخت."
+],
+[
+"افعال کنشی و حالتی | Action & State Verbs",
+"Action: run, write, work | State: know, believe, love, want",
+"افعال کنشی عمل و افعال حالتی احساس، فکر یا وضعیت را نشان می‌دهند.",
+"Action verbs describe activities. State verbs describe feelings, thoughts or conditions.",
+"I am writing. = دارم می‌نویسم.\nI know the answer. = جواب را می‌دانم."
+],
+[
+"افعال وجهی | Modals",
+"can / may / must / should + base verb",
+"بعد از افعال وجهی، فعل ساده بدون to و بدون s می‌آید.",
+"Use the base form of the verb after modal verbs.",
+"You can swim. = تو می‌توانی شنا کنی.\nYou should rest. = بهتر است استراحت کنی."
+],
+[
+"حروف اضافه زمان | Prepositions of Time",
+"in / on / at",
+"in برای ماه، سال و فصل؛ on برای روز و تاریخ؛ at برای ساعت دقیق.",
+"in is used for months, years and seasons. on is used for days and dates. at is used for exact times.",
+"in 2026 = در سال ۲۰۲۶\non Friday = روز جمعه\nat 8 = ساعت ۸"
+],
+[
+"حروف اضافه مکان | Prepositions of Place",
+"in / on / next to / in front of",
+"in یعنی داخل؛ on یعنی روی سطح؛ next to یعنی کنار؛ in front of یعنی جلوی.",
+"These prepositions describe the location of people and things.",
+"in Iran = در ایران\non the table = روی میز"
+],
+[
+"قیدهای حالت | Adverbs of Manner",
+"Adjective + ly",
+"بسیاری از قیدهای حالت با افزودن ly ساخته می‌شوند.",
+"Many adverbs of manner are formed by adding ly to adjectives.",
+"quick → quickly\ncareful → carefully\neasy → easily"
+],
+[
+"قیدهای بی‌قاعده | Irregular Adverbs",
+"good → well | fast → fast | hard → hard",
+"همه قیدها با افزودن ly ساخته نمی‌شوند.",
+"Not all adverbs are formed by adding ly.",
+"She speaks well. = او خوب صحبت می‌کند.\nHe works hard. = او سخت تلاش می‌کند."
+]
+];
+
+// =========================
+// AUDIO | تلفظ صوتی
+// =========================
+
+function getVoice(language){
+ const voices = speechSynthesis.getVoices();
+ const prefix = language.toLowerCase().slice(0,2);
+ return voices.find(v=>v.lang.toLowerCase()===language.toLowerCase())
+ || voices.find(v=>v.lang.toLowerCase().startsWith(prefix))
+ || null;
+}
+
+function speak(text,language){
+ if(!("speechSynthesis" in window)){
+  alert("مرورگر از پخش گفتار پشتیبانی نمی‌کند | Speech synthesis is not supported.");
+  return;
+ }
+
+ speechSynthesis.cancel();
+
+ const message = new SpeechSynthesisUtterance(text);
+ message.lang = language;
+ message.rate = 0.85;
+ message.pitch = 1;
+
+ const voice = getVoice(language);
+ if(voice) message.voice = voice;
+
+ speechSynthesis.speak(message);
+}
+
+function refreshVoiceStatus(){
+ const voices = speechSynthesis.getVoices();
+ const en = voices.some(v=>v.lang.toLowerCase().startsWith("en"));
+ const fa = voices.some(v=>v.lang.toLowerCase().startsWith("fa"));
+
+ document.getElementById("status").innerHTML =
+ "صدای انگلیسی | English Voice: "+(en?"✅ موجود | Available":"⚠️ پیدا نشد | Not Found")+
+ "<br>صدای فارسی | Persian Voice: "+(fa?"✅ موجود | Available":"⚠️ پیدا نشد | Not Found")+
+ "<br><small>برای تلفظ فارسی باید صدای فارسی روی ویندوز نصب باشد.</small>"+
+ "<br><small>A Persian speech voice must be installed on Windows for Persian pronunciation.</small>";
+}
+
+if("speechSynthesis" in window){
+ speechSynthesis.onvoiceschanged=refreshVoiceStatus;
+ setTimeout(refreshVoiceStatus,500);
+}
+
+// =========================
+// NAVIGATION | منوها
+// =========================
+
+document.querySelectorAll("nav button").forEach(button=>{
+ button.addEventListener("click",()=>{
+  document.querySelectorAll("nav button").forEach(b=>b.classList.remove("active"));
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+
+  button.classList.add("active");
+  document.getElementById(button.dataset.page).classList.add("active");
+
+  if("speechSynthesis" in window) speechSynthesis.cancel();
+ });
+});
+
+// =========================
+// VOCABULARY DISPLAY
+// نمایش واژگان
+// =========================
+
+function renderWords(){
+ const query=document.getElementById("search").value.trim().toLowerCase();
+ const lesson=document.getElementById("lesson").value;
+
+ const filtered=words.map((word,index)=>({word,index})).filter(item=>{
+  const w=item.word;
+  return w.join(" ").toLowerCase().includes(query)
+  && (lesson==="all"||String(w[4])===lesson);
+ });
+
+ document.getElementById("words").innerHTML=filtered.map(item=>{
+  const w=item.word;
+  const i=item.index;
+
+  return `
+  <article class="card">
+   <div class="en">${w[0]}</div>
+   <div class="meaning">${w[1]}</div>
+
+   <button class="sound" data-word="${i}">
+   🔊 تلفظ انگلیسی | English Audio
+   </button>
+
+   <button class="sound" data-meaning="${i}">
+   🔊 تلفظ فارسی | Persian Audio
+   </button>
+
+   <div class="example">
+    <b>مثال | Example:</b>
+    <div class="en">${w[2]}</div>
+    <div>${w[3]}</div>
+
+    <button class="sound" data-example="${i}">
+    🔊 شنیدن مثال | Listen to Example
+    </button>
+
+    <button class="sound" data-translation="${i}">
+    🔊 شنیدن ترجمه | Listen to Translation
+    </button>
+   </div>
+
+   <span class="tag">${w[4]===1?"درس اول | Lesson 1":"درس دوم | Lesson 2"}</span>
+  </article>`;
+ }).join("") || `
+ <div class="card">
+ هیچ کلمه‌ای پیدا نشد | No vocabulary found.
+ </div>`;
+
+ document.querySelectorAll("[data-word]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+   speak(words[Number(btn.dataset.word)][0],"en-US");
+  });
+ });
+
+ document.querySelectorAll("[data-meaning]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+   speak(words[Number(btn.dataset.meaning)][1],"fa-IR");
+  });
+ });
+
+ document.querySelectorAll("[data-example]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+   speak(words[Number(btn.dataset.example)][2],"en-US");
+  });
+ });
+
+ document.querySelectorAll("[data-translation]").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+   speak(words[Number(btn.dataset.translation)][3],"fa-IR");
+  });
+ });
+}
+
+document.getElementById("search").addEventListener("input",renderWords);
+document.getElementById("lesson").addEventListener("change",renderWords);
+renderWords();
+
+// =========================
+// PHRASES DISPLAY
+// نمایش عبارت‌ها
+// =========================
+
+document.getElementById("phraseList").innerHTML=phrases.map((p,i)=>`
+ <article class="card">
+  <div class="en">${p[0]}</div>
+  <p>${p[1]}</p>
+
+  <button class="sound" data-phrase-en="${i}">
+  🔊 تلفظ انگلیسی | English Audio
+  </button>
+
+  <button class="sound" data-phrase-fa="${i}">
+  🔊 تلفظ فارسی | Persian Audio
+  </button>
+ </article>
+`).join("");
+
+document.querySelectorAll("[data-phrase-en]").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+  speak(phrases[Number(btn.dataset.phraseEn)][0],"en-US");
+ });
+});
+
+document.querySelectorAll("[data-phrase-fa]").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+  speak(phrases[Number(btn.dataset.phraseFa)][1],"fa-IR");
+ });
+});
+
+// =========================
+// GRAMMAR DISPLAY
+// نمایش گرامر
+// =========================
+
+document.getElementById("grammarList").innerHTML=grammar.map((g,i)=>`
+ <article class="card">
+  <h3>${g[0]}</h3>
+  <div class="en">${g[1]}</div>
+
+  <p><b>توضیح فارسی | Persian Explanation:</b></p>
+  <p>${g[2]}</p>
+
+  <p><b>English Explanation | توضیح انگلیسی:</b></p>
+  <p>${g[3]}</p>
+
+  <p><b>مثال‌ها | Examples:</b></p>
+  <p style="white-space:pre-line;line-height:2">${g[4]}</p>
+
+  <button class="sound" data-grammar="${i}">
+  🔊 شنیدن ساختار | Listen to Structure
+  </button>
+ </article>
+`).join("");
+
+document.querySelectorAll("[data-grammar]").forEach(btn=>{
+ btn.addEventListener("click",()=>{
+  speak(grammar[Number(btn.dataset.grammar)][1],"en-US");
+ });
+});
+
+// =========================
+// QUIZ | آزمون
+// =========================
+
+const questions=[
+["معنی scientist چیست؟ | What does scientist mean?",
+["دانشمند | Scientist","پزشک | Doctor","نویسنده | Writer","مخترع | Inventor"],0],
+
+["گذشته استمراری کدام است؟ | Which one is Past Progressive?",
+["I study","I studied","I was studying","I am study"],2],
+
+["معنی give up چیست؟ | What does give up mean?",
+["شروع کردن | Start","تسلیم شدن | Surrender","ساختن | Build","پیدا کردن | Find"],1],
+
+["ضمیر انعکاسی He کدام است؟ | What is the reflexive pronoun for He?",
+["herself","myself","himself","itself"],2],
+
+["معنی domestic چیست؟ | What does domestic mean?",
+["بین‌المللی | International","داخلی | Domestic","تاریخی | Historical","باستانی | Ancient"],1],
+
+["بعد از should چه فعلی می‌آید؟ | Which verb form follows should?",
+["Verb-ing","Verb + s","To + verb","Base verb"],3],
+
+["معنی hospitable چیست؟ | What does hospitable mean?",
+["مهمان‌نواز | Hospitable","ضعیف | Weak","مشهور | Famous","پرانرژی | Energetic"],0],
+
+["قید good کدام است؟ | What is the adverb form of good?",
+["goodly","well","gooder","bestly"],1],
+
+["برای ساعت دقیق از چه حرفی استفاده می‌کنیم؟ | Which preposition is used for exact time?",
+["in","on","at","by"],2],
+
+["معنی destination چیست؟ | What does destination mean?",
+["بلیط | Ticket","مقصد | Destination","گذرنامه | Passport","فرهنگ | Culture"],1],
+
+["کدام جمله درست است؟ | Which sentence is correct?",
+["They was playing","They were playing","They are played","They playing"],1],
+
+["معنی ancient چیست؟ | What does ancient mean?",
+["مدرن | Modern","داخلی | Domestic","باستانی | Ancient","سریع | Fast"],2],
+
+["قید easy کدام است؟ | What is the adverb form of easy?",
+["easyly","easily","easly","easili"],1],
+
+["معنی suggestion چیست؟ | What does suggestion mean?",
+["پیشنهاد | Suggestion","انتخاب | Choice","سرگرمی | Entertainment","پژوهش | Research"],0],
+
+["کدام جمله درست است؟ | Which sentence is correct?",
+["She can swims","She can to swim","She can swim","She cans swim"],2]
+];
+
+let answers={};
+let submitted=false;
+
+function renderQuiz(){
+ answers={};
+ submitted=false;
+ document.getElementById("result").textContent="";
+
+ document.getElementById("quizArea").innerHTML=questions.map((q,i)=>`
+  <article class="card" id="question-${i}">
+   <h3>${i+1}. ${q[0]}</h3>
+   ${q[1].map((option,j)=>`
+    <button class="option" data-q="${i}" data-a="${j}">
+     ${String.fromCharCode(65+j)}) ${option}
+    </button>
+   `).join("")}
+  </article>
+ `).join("");
+
+ document.querySelectorAll(".option").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+   if(submitted)return;
+
+   const q=Number(btn.dataset.q);
+   answers[q]=Number(btn.dataset.a);
+
+   document.querySelectorAll(`[data-q="${q}"]`).forEach(b=>{
+    b.classList.remove("selected");
+   });
+
+   btn.classList.add("selected");
+  });
+ });
+}
+
+document.getElementById("finish").addEventListener("click",()=>{
+ if(submitted)return;
+
+ submitted=true;
+ let score=0;
+
+ questions.forEach((q,i)=>{
+  if(answers[i]===q[2])score++;
+
+  document.querySelectorAll(`[data-q="${i}"]`).forEach(btn=>{
+   const choice=Number(btn.dataset.a);
+
+   if(choice===q[2])btn.classList.add("correct");
+   else if(answers[i]===choice)btn.classList.add("wrong");
+  });
+ });
+
+ const percentage=Math.round(score/questions.length*100);
+ const unanswered=questions.length-Object.keys(answers).length;
+
+ document.getElementById("result").innerHTML=
+ `نتیجه آزمون | Quiz Result
+ <br>
+ نمره | Score: ${score} / ${questions.length}
+ <br>
+ درصد | Percentage: ${percentage}%
+ <br>
+ پاسخ‌های بدون جواب | Unanswered: ${unanswered}
+ <br>
+ ${score>=12?"عالی بود! | Excellent!":score>=8?"خوب بود، ادامه بده! | Good job, keep going!":"نیاز به تمرین بیشتر داری. | More practice is needed."}`;
+});
+
+document.getElementById("restart").addEventListener("click",()=>{
+ renderQuiz();
+});
+
+renderQuiz();
+
+</script>
+</body>
+</html>
